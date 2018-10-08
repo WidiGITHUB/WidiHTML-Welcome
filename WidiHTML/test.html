@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WidiHTML</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+  <div class="window">
+    <div class="header">
+      <div class="burger-container">
+        <div id="burger">
+          <div class="bar topBar"></div>
+          <div class="mid midBar"></div>
+          <div class="bar btmBar"></div>
+        </div>
+      </div>
+      <div class="fa fa-home"><a class="fa fa-home" href="home.html"></a></div>
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Intro</a></li>
+        <li class="menu-item"><a href="home.html">Home</a></li>
+        <li class="menu-item"><a href="news.html">News</a></li>
+        <li class="menu-item"><a href="products.html">Products</a></li>
+        <li class="menu-item"><a href="about.html">About</a></li>
+        <li class="menu-item"><a href="support.html">Support</a></li>
+      </ul>
+      <div class="fa fa-briefcase"><a class="fa fa-briefcase" href="support.html"></a></div>
+    </div>
+  </div>
+
+  <script>
+
+  (function() {
+    var burger = document.querySelector(".burger-container"),
+        header = document.querySelector(".header");
+
+    burger.onclick = function() {
+        header.classList.toggle("menu-opened");
+    };
+   })();
+
+    </script>
+
+</body>
